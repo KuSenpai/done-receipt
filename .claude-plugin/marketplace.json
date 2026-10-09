@@ -1,0 +1,11 @@
+{
+  "name": "done-receipt",
+  "owner": { "name": "KuSenpai" },
+  "plugins": [
+    {
+      "name": "done-receipt",
+      "source": "./",
+      "description": "Check a coding agent's 'done' against the repo: real test runs, tamper scan on diffs, a Stop hook, evidence-based reports."
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "done-receipt",
+  "description": "Check a coding agent's 'done, tests pass' against the repo: verifies tests really ran, scans diffs for weakened tests, blocks a pass claim without a valid receipt (Stop hook), and asks for an evidence-based final report.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "keywords": ["agent", "testing", "verification", "guardrails", "skills"]
+}

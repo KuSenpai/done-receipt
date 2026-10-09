@@ -1,0 +1,16 @@
+{
+  "description": "done-receipt: block a 'tests pass' final message when the test receipt is missing, not VERIFIED, or STALE. Disable with DONE_RECEIPT_STOP_HOOK=off.",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/stop_gate.py\" 2>/dev/null || python \"${CLAUDE_PLUGIN_ROOT}/hooks/stop_gate.py\"",
+            "timeout": 60
+          }
+        ]
+      }
+    ]
+  }
+}
