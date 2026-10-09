@@ -57,6 +57,12 @@ VERDICT: SUSPICIOUS
 /plugin install done-receipt@done-receipt
 ```
 
+The `owner/repo` form clones over SSH. Without a GitHub SSH key it fails with "Host key verification failed"; use the HTTPS URL instead:
+
+```
+/plugin marketplace add https://github.com/KuSenpai/done-receipt.git
+```
+
 To try it without a marketplace, load a local clone for one session: `claude --plugin-dir path/to/done-receipt` (this is how the evals load it).
 
 **Manually**, for any setup that reads `SKILL.md` folders:
